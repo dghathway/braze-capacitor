@@ -11,16 +11,16 @@ public class BrazeCapacitor {
 
     public String initIt(String key) {
         Log.i("InitIt", key);
-        return value;
+        return key;
     }
 
     public String login(String email) {
         Log.i("Echo", email);
-        return value;
+        return email;
     }
 
     public String logout(String email) {
         Log.i("Echo", email);
-        return value;
+        return email;
     }
 }
