@@ -1,0 +1,79 @@
+{
+  "api": {
+    "name": "BrazeCapacitorPlugin",
+    "slug": "brazecapacitorplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "initIt",
+        "signature": "(key: string) => Promise<{ results: any[]; }>",
+        "parameters": [
+          {
+            "name": "key",
+            "docs": "",
+            "type": "string"
+          }
+        ],
+        "returns": "Promise<{ results: any[]; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "initit"
+      },
+      {
+        "name": "login",
+        "signature": "(email: string) => Promise<{ results: any[]; }>",
+        "parameters": [
+          {
+            "name": "email",
+            "docs": "",
+            "type": "string"
+          }
+        ],
+        "returns": "Promise<{ results: any[]; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "login"
+      },
+      {
+        "name": "logout",
+        "signature": "(email: string) => Promise<{ results: any[]; }>",
+        "parameters": [
+          {
+            "name": "email",
+            "docs": "",
+            "type": "string"
+          }
+        ],
+        "returns": "Promise<{ results: any[]; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "logout"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
