@@ -9,7 +9,6 @@ end
 
 target 'Plugin' do
   capacitor_pods
-  pod 'Appboy-iOS-SDK'
 end
 
 target 'PluginTests' do

@@ -15,20 +15,16 @@ public class BrazeCapacitorPlugin: CAPPlugin {
     
     @objc func initIt(_ call: CAPPluginCall) {
         
-//        let radarKey = "prj_test_pk_f2c81bc7fbc7e137848d119c55c844fb190061b6";
-//        Radar.initialize(publishableKey: radarKey);
-        
-        let value = call.getString("key") ?? ""
+        let key = call.getString("key") ?? ""
         call.resolve([
-            "key": implementation.echo(value)
+            "key": implementation.echo(key)
         ])
     }
     
     @objc func login(_ call: CAPPluginCall) {
         let email = call.getString("email") ?? ""
-        
-        //Appboy.sharedInstance()?.changeUser(email)
-        //Radar.setMetadata(["brazeExternalId": email])
+
+        // send this email to AppDelegate.swift
         
         call.resolve([
             "email": implementation.echo(email)

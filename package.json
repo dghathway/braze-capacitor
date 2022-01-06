@@ -13,15 +13,8 @@
     "ios/Plugin/",
     "BrazeCapacitor.podspec"
   ],
-  "author": "Darren Gates",
+  "author": "Hathway Technology Group",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dghathway/braze-capacitor.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dghathway/braze-capacitor/issues"
-  },
   "keywords": [
     "capacitor",
     "plugin",
