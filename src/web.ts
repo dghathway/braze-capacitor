@@ -9,23 +9,15 @@ export class BrazeCapacitorWeb
     console.log('ECHO', options);
     return options;
   }
+  
   async initIt(key: string): Promise<{ results: any[] }> {
     console.log('web initIt', key);
     return {
       results: [{}]
     };
   }
-
-  async login(email: string): Promise<{results: any[]}> {
-    console.log('web login', email);
-    return {
-      results: [{}]
-    };    
+  async sendJSON(options: { value: string }): Promise<{ value: string }> {
+    console.log('web sendJSON', options);
+    return {value: "not implemented on web"};
   }
-  async logout(email: string): Promise<{results: any[]}> {
-    console.log('web logout', email);
-    return {
-      results: [{}]
-    };   
   }
-}

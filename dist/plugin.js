@@ -16,17 +16,9 @@ var capacitorBrazeCapacitor = (function (exports, core) {
                 results: [{}]
             };
         }
-        async login(email) {
-            console.log('web login', email);
-            return {
-                results: [{}]
-            };
-        }
-        async logout(email) {
-            console.log('web logout', email);
-            return {
-                results: [{}]
-            };
+        async sendJSON(options) {
+            console.log('web sendJSON', options);
+            return { value: "not implemented on web" };
         }
     }
 

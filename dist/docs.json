@@ -38,36 +38,20 @@
         "slug": "initit"
       },
       {
-        "name": "login",
-        "signature": "(email: string) => Promise<{ results: any[]; }>",
+        "name": "sendJSON",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
         "parameters": [
           {
-            "name": "email",
+            "name": "options",
             "docs": "",
-            "type": "string"
+            "type": "{ value: string; }"
           }
         ],
-        "returns": "Promise<{ results: any[]; }>",
+        "returns": "Promise<{ value: string; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],
-        "slug": "login"
-      },
-      {
-        "name": "logout",
-        "signature": "(email: string) => Promise<{ results: any[]; }>",
-        "parameters": [
-          {
-            "name": "email",
-            "docs": "",
-            "type": "string"
-          }
-        ],
-        "returns": "Promise<{ results: any[]; }>",
-        "tags": [],
-        "docs": "",
-        "complexTypes": [],
-        "slug": "logout"
+        "slug": "sendjson"
       }
     ],
     "properties": []

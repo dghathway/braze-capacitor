@@ -1,6 +1,5 @@
 import Foundation
 import Capacitor
-import Appboy_iOS_SDK
 
 @objc(BrazeCapacitorPlugin)
 public class BrazeCapacitorPlugin: CAPPlugin {
@@ -20,22 +19,11 @@ public class BrazeCapacitorPlugin: CAPPlugin {
             "key": implementation.echo(key)
         ])
     }
-    
-    @objc func login(_ call: CAPPluginCall) {
-        let email = call.getString("email") ?? ""
 
-        // send this email to AppDelegate.swift
-        
+    @objc func sendJSON(_ call: CAPPluginCall) {
+        let value = call.getString("value") ?? ""
         call.resolve([
-            "email": implementation.echo(email)
+            "value": implementation.sendJSON(value)
         ])
     }
-    
-    @objc func logout(_ call: CAPPluginCall) {
-        let value = call.getString("email") ?? ""
-        call.resolve([
-            "email": implementation.echo(value)
-        ])
-    }
-    
 }

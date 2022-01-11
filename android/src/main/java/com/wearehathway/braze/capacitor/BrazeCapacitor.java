@@ -14,13 +14,8 @@ public class BrazeCapacitor {
         return key;
     }
 
-    public String login(String email) {
-        Log.i("Echo", email);
-        return email;
-    }
-
-    public String logout(String email) {
-        Log.i("Echo", email);
-        return email;
+    public String sendJSON(String value) {
+        Log.i("sendJSON", value);
+        return value;
     }
 }

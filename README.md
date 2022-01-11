@@ -15,8 +15,7 @@ npx cap sync
 
 * [`echo(...)`](#echo)
 * [`initIt(...)`](#initit)
-* [`login(...)`](#login)
-* [`logout(...)`](#logout)
+* [`sendJSON(...)`](#sendjson)
 
 </docgen-index>
 
@@ -53,32 +52,17 @@ initIt(key: string) => Promise<{ results: any[]; }>
 --------------------
 
 
-### login(...)
+### sendJSON(...)
 
 ```typescript
-login(email: string) => Promise<{ results: any[]; }>
+sendJSON(options: { value: string; }) => Promise<{ value: string; }>
 ```
 
-| Param       | Type                |
-| ----------- | ------------------- |
-| **`email`** | <code>string</code> |
+| Param         | Type                            |
+| ------------- | ------------------------------- |
+| **`options`** | <code>{ value: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ results: any[]; }&gt;</code>
-
---------------------
-
-
-### logout(...)
-
-```typescript
-logout(email: string) => Promise<{ results: any[]; }>
-```
-
-| Param       | Type                |
-| ----------- | ------------------- |
-| **`email`** | <code>string</code> |
-
-**Returns:** <code>Promise&lt;{ results: any[]; }&gt;</code>
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
 
