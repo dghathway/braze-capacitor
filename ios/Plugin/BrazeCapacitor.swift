@@ -6,10 +6,10 @@ import Cordova
         print(value)
         return value
     }
-    @objc public func sendJSON(_ value: String) -> String {
+    @objc public func sendJSON(_ key: String, __ value: String) -> String {
         // Receive data from JS and post to AppDelegate
         print("sendJSON NotificationCenter")
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "JSON"), object: nil, userInfo: ["json" : value]) 
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "JSON"), object: nil, userInfo: [key : value]) 
 
         return value
     }    

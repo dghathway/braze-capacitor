@@ -14,8 +14,9 @@ public class BrazeCapacitor {
         return key;
     }
 
-    public String sendJSON(String value) {
-        Log.i("sendJSON", value);
+    public String sendJSON(String key, String value) {
+        Log.i("sendJSON value", value);
+        Log.i("sendJSON key", key);
         return value;
     }
 }
