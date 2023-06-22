@@ -39,12 +39,12 @@
       },
       {
         "name": "sendJSON",
-        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "signature": "(options: { key: string; value: string; }) => Promise<{ value: string; }>",
         "parameters": [
           {
             "name": "options",
             "docs": "",
-            "type": "{ value: string; }"
+            "type": "{ key: string; value: string; }"
           }
         ],
         "returns": "Promise<{ value: string; }>",

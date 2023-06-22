@@ -8,6 +8,7 @@ export interface BrazeCapacitorPlugin {
         results: any[];
     }>;
     sendJSON(options: {
+        key: string;
         value: string;
     }): Promise<{
         value: string;

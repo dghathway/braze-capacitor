@@ -55,12 +55,12 @@ initIt(key: string) => Promise<{ results: any[]; }>
 ### sendJSON(...)
 
 ```typescript
-sendJSON(options: { value: string; }) => Promise<{ value: string; }>
+sendJSON(options: { key: string; value: string; }) => Promise<{ value: string; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                                         |
+| ------------- | -------------------------------------------- |
+| **`options`** | <code>{ key: string; value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
