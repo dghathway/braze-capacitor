@@ -25,7 +25,7 @@ public class BrazeCapacitorPlugin: CAPPlugin {
         let key = call.getString("key") ?? ""
         
         call.resolve([
-            key: implementation.sendJSON(value)
+            key: implementation.sendJSON(key, value)
         ])
     }
 }
