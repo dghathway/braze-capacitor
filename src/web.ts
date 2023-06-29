@@ -16,7 +16,7 @@ export class BrazeCapacitorWeb
       results: [{}]
     };
   }
-  async sendJSON(options: { key:string, value: string }): Promise<{ value: string }> {
+  async sendJSON(options: { key:string, value: any }): Promise<{ value: string }> {
     console.log('web sendJSON', options);
     return {value: "not implemented on web"};
   }

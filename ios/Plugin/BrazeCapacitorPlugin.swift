@@ -19,13 +19,20 @@ public class BrazeCapacitorPlugin: CAPPlugin {
             "key": implementation.echo(key)
         ])
     }
-
+    
     @objc func sendJSON(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? "" 
         let key = call.getString("key") ?? ""
+        // let value = call.getString("value") ?? "" 
+        let value = call.getAny("value") as? JSObject;
+
+        // if let bar = fooCAP["bar"] as? JSObject {
+        //     if let color = bar["color"] as? String {
+        //         // Do something
+        //     }
+        // }
         
         call.resolve([
-            key: implementation.sendJSON(key, value)
+            key: implementation.sendJSON(_: key, __: value)
         ])
     }
 }
