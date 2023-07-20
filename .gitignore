@@ -1,4 +1,5 @@
 node_modules
 .DS_Store
+.npmrc
 android/.idea
 ios/Plugin.xcworkspace/xcuserdata/darrengates.xcuserdatad/UserInterfaceState.xcuserstate
