@@ -11,7 +11,7 @@ export declare class BrazeCapacitorWeb extends WebPlugin implements BrazeCapacit
     }>;
     sendJSON(options: {
         key: string;
-        value: string;
+        value: any;
     }): Promise<{
         value: string;
     }>;

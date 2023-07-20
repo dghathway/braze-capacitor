@@ -9,7 +9,7 @@ export interface BrazeCapacitorPlugin {
     }>;
     sendJSON(options: {
         key: string;
-        value: string;
+        value: any;
     }): Promise<{
         value: string;
     }>;

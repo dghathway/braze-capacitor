@@ -20,7 +20,7 @@ public class BrazeCapacitorPlugin extends Plugin {
         String value = call.getString("value");
         String key = call.getString("key");
         JSObject ret = new JSObject();
-        ret.put(key, implementation.sendJSON(value)); 
+        ret.put(key, implementation.sendJSON(key, value));
 
         // send back data to MainActivity
         Intent intent = new Intent("sendJSONEvent");
